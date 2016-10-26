@@ -14,13 +14,14 @@ Author: Federico Farris
    int waitingTime[processCount];
    int tournaroundTime[processCount];
    
-   for(i=0;i<processCount;i++)
-   { std::cout<<"Insert the burstTime of the P["<<(i+1)<<"]"<<std::endl;
+   	for(i=0;i<processCount;i++)
+   { 
+     std::cout<<"Insert the burstTime of the P["<<(i+1)<<"]"<<std::endl;
      std::cin>>burstTime[i];
-   	}
+   }
     
     waiting time[0]=0;
-	for(i=0;i<processCount;i++)
+	 for(i=0;i<processCount;i++)
 	{
 		waitingtime[i]=waitingtime[i-1]+burstTime[i-i];
 	}
